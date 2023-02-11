@@ -1,5 +1,5 @@
 Repository's Location,Branch,File Formats,Ignore Glob List,Ignore standalone config,Ignore Commits List,Ignore Authors List,Shallow Cloning,Find Previous Authors
-https://github.com/roshankumar1991/ip.git,master,,tutorials/**,,,,,
-https://github.com/hana-oxy/ip.git,master,,tutorials/**,,,,,
-https://github.com/badassengineer/ip.git,master,,tutorials/**,,,,,
-https://github.com/Opkko/ip.git,master,,tutorials/**,,,,,
+https://github.com/roshankumar1991/ip.git,master,,tutorials/**;gradlew.bat,,,,,
+https://github.com/hana-oxy/ip.git,master,,tutorials/**;gradlew.bat,,,,,
+https://github.com/badassengineer/ip.git,master,,tutorials/**;gradlew.bat,,,,,
+https://github.com/Opkko/ip.git,master,,tutorials/**;gradlew.bat,,,,,
