@@ -1,8 +1,8 @@
-Mar 19, 2023 1:29:19 AM reposense.parser.CsvParser validateHeader
+Mar 20, 2023 1:24:58 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, repo-config.csv, and recognized columns: Ignore Standalone Config,  Repository's Location,  Branch,  Shallow Cloning,  File formats,  Ignore Glob List,  Ignore Authors List,  Find Previous Authors,  Ignore Commits List
-Mar 19, 2023 1:29:19 AM reposense.parser.CsvParser validateHeader
+Mar 20, 2023 1:24:58 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, author-config.csv, and recognized columns: Author's Emails,  Repository's Location,  Author's GitHub ID,  Branch,  Author's Display Name,  Ignore Glob List,  Author's Git Author Name
-Mar 19, 2023 1:29:19 AM reposense.git.GitConfig getGlobalGitLfsConfig
+Mar 20, 2023 1:24:58 AM reposense.git.GitConfig getGlobalGitLfsConfig
 WARNING: Could not get global git lfs config
 java.lang.RuntimeException: reposense.system.CommandRunnerProcessException: Error returned from command git config --global --list on path . :
 fatal: unable to read config file '/home/runner/.gitconfig': No such file or directory
@@ -18,79 +18,79 @@ fatal: unable to read config file '/home/runner/.gitconfig': No such file or dir
 	at reposense.system.CommandRunner.runCommand(CommandRunner.java:21)
 	... 3 more
 
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner spawnCloneProcess
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/badassengineer/ip.git...
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/roshankumar1991/ip.git...
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/Opkko/ip.git...
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner spawnCloneProcess
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/hana-oxy/ip.git...
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/Opkko/ip.git to complete...
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/hana-oxy/ip.git to complete...
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/badassengineer/ip.git to complete...
-Mar 19, 2023 1:29:19 AM reposense.report.RepoCloner waitForCloneProcess
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/roshankumar1991/ip.git...
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/Opkko/ip.git...
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/roshankumar1991/ip.git to complete...
-Mar 19, 2023 1:29:20 AM reposense.report.RepoCloner waitForCloneProcess
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/badassengineer/ip.git to complete...
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/hana-oxy/ip.git to complete...
+Mar 20, 2023 1:24:58 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/Opkko/ip.git to complete...
+Mar 20, 2023 1:24:59 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/badassengineer/ip.git completed!
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator analyzeRepos
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/4] Analyzing https://github.com/badassengineer/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/roshankumar1991/ip.git completed!
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [2/4] Analyzing https://github.com/roshankumar1991/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator updateRepoConfig
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/badassengineer/ip.git (master) does not contain a standalone config file.
-Mar 19, 2023 1:29:20 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Mar 20, 2023 1:24:59 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/badassengineer/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.RepoCloner waitForCloneProcess
+Mar 20, 2023 1:24:59 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/hana-oxy/ip.git completed!
-Mar 19, 2023 1:29:20 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/Opkko/ip.git completed!
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator updateRepoConfig
-INFO: https://github.com/roshankumar1991/ip.git (master) does not contain a standalone config file.
-Mar 19, 2023 1:29:20 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
-INFO: Extracting relevant file info from https://github.com/roshankumar1991/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/badassengineer/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/roshankumar1991/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/badassengineer/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/roshankumar1991/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/roshankumar1991/ip.git (master) completed!
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/badassengineer/ip.git (master) completed!
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [3/4] Analyzing https://github.com/hana-oxy/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [4/4] Analyzing https://github.com/Opkko/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator updateRepoConfig
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [2/4] Analyzing https://github.com/hana-oxy/ip.git (master)...
+Mar 20, 2023 1:24:59 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/roshankumar1991/ip.git completed!
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/hana-oxy/ip.git (master) does not contain a standalone config file.
-Mar 19, 2023 1:29:20 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Mar 20, 2023 1:24:59 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/hana-oxy/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator updateRepoConfig
+Mar 20, 2023 1:24:59 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/Opkko/ip.git completed!
+Mar 20, 2023 1:24:59 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/badassengineer/ip.git (master)...
+Mar 20, 2023 1:24:59 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/badassengineer/ip.git (master)...
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/badassengineer/ip.git (master) completed!
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [3/4] Analyzing https://github.com/roshankumar1991/ip.git (master)...
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator updateRepoConfig
+INFO: https://github.com/roshankumar1991/ip.git (master) does not contain a standalone config file.
+Mar 20, 2023 1:24:59 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+INFO: Extracting relevant file info from https://github.com/roshankumar1991/ip.git (master)...
+Mar 20, 2023 1:24:59 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/roshankumar1991/ip.git (master)...
+Mar 20, 2023 1:24:59 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/roshankumar1991/ip.git (master)...
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/roshankumar1991/ip.git (master) completed!
+Mar 20, 2023 1:24:59 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [4/4] Analyzing https://github.com/Opkko/ip.git (master)...
+Mar 20, 2023 1:25:00 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/Opkko/ip.git (master) does not contain a standalone config file.
-Mar 19, 2023 1:29:20 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Mar 20, 2023 1:25:00 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/Opkko/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/Opkko/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/Opkko/ip.git (master)...
-Mar 19, 2023 1:29:20 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/Opkko/ip.git (master) completed!
-Mar 19, 2023 1:29:21 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Mar 20, 2023 1:25:00 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/hana-oxy/ip.git (master)...
-Mar 19, 2023 1:29:21 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Mar 20, 2023 1:25:00 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/hana-oxy/ip.git (master)...
-Mar 19, 2023 1:29:21 AM reposense.report.ReportGenerator analyzeRepo
+Mar 20, 2023 1:25:00 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/Opkko/ip.git (master)...
+Mar 20, 2023 1:25:00 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/hana-oxy/ip.git (master) completed!
-Mar 19, 2023 1:29:21 AM reposense.report.ReportGenerator generateReposReport
+Mar 20, 2023 1:25:00 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/Opkko/ip.git (master)...
+Mar 20, 2023 1:25:00 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/Opkko/ip.git (master) completed!
+Mar 20, 2023 1:25:00 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/ip-dashboard/ip-dashboard/reposense-report
-Mar 19, 2023 1:29:21 AM reposense.RepoSense main
-INFO: Elapsed processing time: 1.88 second(s)
+Mar 20, 2023 1:25:00 AM reposense.RepoSense main
+INFO: Elapsed processing time: 1.89 second(s)
